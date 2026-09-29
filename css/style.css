@@ -82,8 +82,40 @@ h1{
   line-height:1.18;
   letter-spacing:-.01em;
   color:var(--ink);
-  margin:0 0 26px;
+  margin:0 0 14px;
 }
+
+.credit{
+  font-size:1.05rem;
+  line-height:1.65;
+  color:var(--muted);
+  max-width:38ch;
+  margin:0 auto 16px;
+}
+
+.artist-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:10px 22px;
+  border:1px solid rgba(159,182,172,.28);
+  border-radius:10px;
+  background:rgba(159,182,172,.05);
+  text-decoration:none;
+  font-family:var(--sans);
+  font-weight:600;
+  font-size:.86rem;
+  color:var(--muted);
+  margin-bottom:44px;
+  transition:border-color .25s ease, background .25s ease, color .25s ease, transform .25s ease;
+}
+.artist-link:hover{
+  border-color:var(--accent);
+  background:rgba(95,217,160,.08);
+  color:var(--accent-bright);
+  transform:translateY(-2px);
+}
+.artist-link svg{ opacity:.65; flex-shrink:0; }
 
 .lede{
   font-size:1.05rem;
@@ -213,6 +245,7 @@ h1{
 }
 .reveal-1{ animation-delay:.2s; }
 .reveal-2{ animation-delay:1.7s; }
+.reveal-2b{ animation-delay:2.1s; animation-duration:1.2s; }
 .reveal-3{ animation-delay:2.4s; animation-duration:1.6s; }
 
 /* The CTA gets its own bouncier "pop" entrance, then a slow idle glow
